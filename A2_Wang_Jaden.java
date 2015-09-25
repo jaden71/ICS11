@@ -88,8 +88,8 @@ public class A2_Wang_Jaden {
         input.close();
         
         //Add some spacing
+        System.out.println("\n---------------------------------------------------------------------------------\n"); 
         
-        System.out.println("\n---------------------------------------------------------------------------------\n");
         //**************************************Prints the Weather Report**********************************************
         System.out.println(province + "ers who were hit hard by hurricane " + male + " two years ago were " +
                            "hunkering\ndown for tropical storm " + female + ".\n");
