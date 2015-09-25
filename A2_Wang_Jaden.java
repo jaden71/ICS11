@@ -69,12 +69,12 @@ public class A2_Wang_Jaden {
         System.out.println(province + "ers who were hit hard by hurricane " + male + " two years ago were " +
                            "hunkering\ndown for tropical storm " + female + ".\n");
         
-        System.out.println(female +" isn�t expected to be quite as ferocious as " + male +", but will almost\n" +
+        System.out.println(female +" isn't expected to be quite as ferocious as " + male +", but will almost\n" +
                            "certainly churn ashore early Tuesday with its centre near the lake\nin southeast " 
                            + province + ", said the Canadian Hurricane Centre in " + city + ".\n");
         
-        System.out.println("However the storm�s effects will be far-reaching with impacts spreading\nwell away " +
-                           "from the storm�s track, the centre said in a bulletin issued at\n" + wholeNum + "p.m.\n");
+        System.out.println("However the storm's effects will be far-reaching with impacts spreading\nwell away " +
+                           "from the storm's track, the centre said in a bulletin issued at\n" + wholeNum + "p.m.\n");
         
         System.out.println("Forecasters say " + female + " will touch down as a hurricane or a strong\ntropical " +
                            "storm, depending on its wind speed.\n");
@@ -82,7 +82,7 @@ public class A2_Wang_Jaden {
         System.out.println("Tropical storm warnings and hurricane watches were in effect for parts of\nsouthern " + 
                            "and eastern " + province + ".\n");
         
-        System.out.println("The storm�s winds were clocked at " + dec.format(realNum) + " kilometres per hour as it " +
+        System.out.println("The storm's winds were clocked at " + dec.format(realNum) + " kilometres per hour as it " +
                            "headed\ntoward the island at 55 kilometres per hour.\n");
         
         System.out.println("A local resident was interviewed and said, \"" + comment + "\".");
