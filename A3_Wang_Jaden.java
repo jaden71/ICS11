@@ -13,10 +13,10 @@ public class A3_Wang_Jaden {
      Variable Dictionary
      int dealerCount = sum of dealer's cards
      int playerCount = sum of player's cards
-     int dealerOne 
-     int dealerTwo
-     int playerOne
-     int playerTwo
+     int dealerOne = Dealer's first card
+     int dealerTwo = Dealer's second card
+     int playerOne = Player's first card
+     int playerTwo = Player's second card
     ******************************************************************/
     
     int dealerOne = (int) Math.floor(Math.random() * 11) + 1;
