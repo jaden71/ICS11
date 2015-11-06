@@ -27,27 +27,37 @@ public class A3_Wang_Jaden {
     int dealerCount = dealerOne + dealerTwo;
     int playerCount = playerOne + playerTwo;
     String answer;
-    
+    Scanner input = new Scanner(System.in);
+    //dealerCount = 22;
+    //playerCount = 21;
     System.out.println("Welcome to Blackjack!");
     
-    if (playerCount > 21)
-      System.out.println("You bust! You lost!");
-    else if (dealerCount > 21)
+    if (dealerCount > 21 || (dealerCount > 21 && playerCount > 21))
       System.out.println("Dealer busted! You win!");
-    else
-      System.out.println("Dealer cards: " + dealerOne + ", ?");
     
+    else if (playerCount > 21)
+      System.out.println("You busted! You lost!");
+    
+    else if (playerCount == 21 || (dealerCount == 21 && playerCount == 21))
+      System.out.println("You got a Blackjack! You won!");
+    
+    else if (dealerCount == 21)
+      System.out.println("Dealer got a Blackjack! You lost!");
+    
+      System.out.println("Dealer cards: " + dealerOne + ", ?");
+      System.out.println("Your cards: " + playerOne + ", " + playerTwo);
     
     do{
     System.out.println("Hit or Stand?");
-    String answer = input.nextLine();
+    answer = input.nextLine();
     
     if (answer.equalsIgnoreCase("Hit"))
-      (int) Math.floor(Math.random() * 11) + 1;
-    else if(!(answer
+      playerCount = (int) Math.floor(Math.random() * 11) + 1;
+   
     
-  }while(answer.equalsIgnoreCase
+  }while(answer.equalsIgnoreCase("hit"));
   
  
   
+}
 }
