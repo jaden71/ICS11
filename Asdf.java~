@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class Asdf {
+  
+  
+  public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+    int rando = (int) Math.floor(Math.random() * (100)) + 1;
+    System.out.println(rando);
+    int count = 0;
+    do 
+    {
+      System.out.println("Guess a number between 1 to 100.");
+      int usernum = input.nextInt();
+      if (usernum >= 1 && usernum <= 100)
+        {
+          if (usernum > rando)
+          System.out.println("Too high");
+      else if (usernum < rando)
+        System.out.println("Too low");
+      count++;
+      }
+    else
+      System.out.println("Has to between 1 to 100");
+    
+    } while (!(usernum == rando));
+    
+    System.out.println(count);
+
+
+  }
+
+  
+}

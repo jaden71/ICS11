@@ -1,0 +1,20 @@
+/**
+ * Auto Generated Java Class.
+ */
+public class Asdassdasd {
+  
+  
+  public static void main(String[] args) { 
+    System.out.println("How many items to add?");
+do
+{
+   howMany = input.nextInt();
+   if (howMany <= 0)
+      System.out.println("Give a positive value.");
+}while (howMany <= 0);
+    
+  }
+  
+  /* ADD YOUR CODE HERE */
+  
+}
