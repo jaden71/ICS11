@@ -51,25 +51,25 @@ public class A3_Wang_Jaden {
     {
       System.out.println("Dealer busted.\n-----You win!-----");
       victory = true;
-    }
+    }//end if
     //Determine if player busted
     else if (playerCount > 21)
     {
       System.out.println("You busted.\n-----You lost!-----");
       victory = true;
-    }
+    }//end if
     //Determine if user got a blackjack
     else if (playerCount == 21 || (dealerCount == 21 && playerCount == 21))
     {
       System.out.println("You got a blackjack.\n-----You win!-----");
       victory = true;
-    }
+    }//end if
     //Determine if dealer got a blackjack
     else if (dealerCount == 21)
     {
       System.out.println("Dealer got a blackjack.\n-----The dealer wins!-----");
       victory = true;
-    }
+    }//end if
     //Display user's cards and dealer card
     System.out.println("Dealer cards: " + dealerOne + ", ?");
     System.out.println("Your cards: " + playerOne + ", " + playerTwo + "\n");
@@ -91,25 +91,25 @@ public class A3_Wang_Jaden {
           System.out.println("You busted.\n-----You lost!-----");
           inGame = false;
           victory = true;
-        }
+        }//end if playercount > 21
         //Determines if user won from that card
         else if (playerCount == 21)
         {
           System.out.println("You got a Blackjack.\n-----You won!-----");
           inGame = false;
           victory = true;
-        }
-      }
+        }//end if playercount == 21
+      }//end if hit
       //Determine if user stands
       else if (answer.equalsIgnoreCase("stand"))
       {
         System.out.println("You stood at " + playerCount + "!");
         inGame = false;
-      }
+      }//end if
       //Input validation from user
       else 
         System.out.println("Answer must be hit or stand.");
-    }
+    }//end while
     //Dealer's turn to hit
     if (victory == false)
     {
@@ -121,7 +121,7 @@ public class A3_Wang_Jaden {
         nextCard = (int) Math.floor(Math.random() * 11) + 1;
         System.out.println("Dealer got a(n) " + nextCard);
         dealerCount = dealerCount + nextCard;
-      }
+      }//end while
       
       //Determine who won in the end
       System.out.println("Dealer has " + dealerCount + " and you have " + playerCount + ".");
@@ -137,6 +137,6 @@ public class A3_Wang_Jaden {
       else
         System.out.println("You were closer to 21\n-----You win!-----");
       
-    }
-  }
-}
+    }//end if victory == false
+  }//end main
+}//end class
