@@ -36,8 +36,6 @@ public class A3_Wang_Jaden {
     int nextCard;
     //Declare user's input (hit or stand)
     String answer;
-    //Declare score
-    int score = 0;
     
     //Declare loop states ( to continue or not)
     boolean inGame = true;
@@ -45,8 +43,6 @@ public class A3_Wang_Jaden {
     
     //Welcome prompt
     System.out.println("Welcome to Blackjack!\n");
-    
-    do{
     
     //Determine if anyone has won with starting hand
     
@@ -141,19 +137,6 @@ public class A3_Wang_Jaden {
       else
         System.out.println("You were closer to 21\n-----You win!-----");
       
-    }
-    System.out.println("Play again? Yes or no?");
-    do{
-      answer = input.nextLine();
-      if (answer.equalsIgnoreCase("yes"))
-            playing=true;
-      else if (answer.equalsIgnoreCase("no"))
-            playing=false;
-      else
-            System.out.println("Wrong answer.");
-      }while(answer.equalsIgnoreCase("yes") || answer.equalsIgnoreCase("no"));
-    } while(playing==true);
     }//end if victory == false
   }//end main
-}
 }//end class

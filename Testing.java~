@@ -1,0 +1,16 @@
+/**
+ * Auto Generated Java Class.
+ */
+public class Testing {
+  
+  
+  public static void main(String[] args) { 
+    
+    String person = "King Arthur";
+    person = "Guinevere";
+    
+  }
+  
+  /* ADD YOUR CODE HERE */
+  
+}
